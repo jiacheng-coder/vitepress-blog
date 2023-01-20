@@ -6,13 +6,26 @@ export default {
     ],
     nav: [
       { text: '🫣自我介绍', link: '/index' },
-      { text: '🔥TS学习', link: '/ts/', activeMatch: '/ts/' },
+      { text: 'Typescript', link: '/ts/', activeMatch: '/ts/' },
       { text: '🔥Vue', link: '/vue3/', activeMatch: '/vue3/' },
       { text: 'Uniapp', link: '/uniapp/', activeMatch: '/uniapp/' },
-      { text: '测试', link: '/test/', activeMatch: '/test/' },
       { text: '🌖Team', link: '/team/', activeMatch: '/team/' },
+      { text: '前端测试', link: '/test/', activeMatch: '/test/' },
     ],
+    footer: {
+      message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+      copyright: 'Copyright © 2023-present <a href="https://github.com/jiacheng-coder">Jiacheng-Coder</a>'
+    },
     sidebar: {
+      '/': [
+        {
+          text: '起步',
+          collapsible: true,
+          items: [
+            { text: '介绍', link: '/' },
+          ]
+        },
+      ],
       '/vue3/': [
         {
           text: '起步',
